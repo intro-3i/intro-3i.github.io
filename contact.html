@@ -12,9 +12,9 @@
 http://www.megapx.com/info.htmlのフォームよりお問い合わせください。
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 -->
-<title>高機能HTMLテンプレート no.001</title>
+<title>サンプルお問い合わせフォーム　高機能HTMLテンプレート no.001</title>
 <meta name="Keywords" content="キーワード01,キーワード02,キーワード03" />
-<meta name="Description" content="高機能HTMLテンプレート no.001。ここにページの説明文を入れます。" />
+<meta name="Description" content="サンプルお問い合わせフォーム　高機能HTMLテンプレート no.001。ここにページの説明文を入れます。" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="script.js"></script>
@@ -25,14 +25,14 @@ http://www.megapx.com/info.htmlのフォームよりお問い合わせください。
 <!--head start-->
   <div id="head">
     <h1>高機能HTMLテンプレート no.001　H1サイト名</h1>
-    <a href="index.html" title="高機能HTMLテンプレート no.001　トップページへ"><img src="img/logo.gif" alt="高機能HTMLテンプレート no.001　ロゴ" id="logo" /></a>
+    <a href="index.html" title="高機能HTMLテンプレート no.001　トップページへ"><img src="img/logo.gif" alt="高機能HTMLテンプレート no.001　ロゴ" / id="logo"></a>
     <ul id="h_list">
       <li><a href="#">プライバシーポリシー</a></li>
       <li><a href="#">サイトマップ</a></li>
     </ul>
     <div id="navi_b">
       <ul id='nav'>
-        <li><strong>トップページ</strong></li>
+        <li><a href="index.html">トップページ</a></li>
         <li><a href="works.html">業務内容</a>
           <ul>
             <li><a href="works.html#works01">業務内容その１</a></li>
@@ -77,76 +77,56 @@ http://www.megapx.com/info.htmlのフォームよりお問い合わせください。
   <!--/head end-->
   <!--main start-->
   <div id="main">
+    <div id="pankuzu"><a href="index.html">トップページ</a>　＞　<strong>サンプルお問い合わせフォーム</strong></div>
     <!--content start-->
     <div id="content">
-      <div id="top_img"><img src="img/top_img.jpg" alt="私たちは、自然に優しい生活を応援します。" /></div>
-      <h2>弊社のホームページへようこそ<span>H2サンプル大見出し</span></h2>
-      <h3>弊社のホームページへようこそ<span>H3サンプル大見出し</span></h3>
+      <h2>サンプルお問い合わせフォーム<span>H2サンプル大見出し</span></h2>
+      <div id="mokuji">
+        <p>当テンプレートをご活用ありがとうございます。このページはサンプルお問い合わせフォームです。<br />
+          <span class="chui">※あくまで空のサンプルフォームですので実際には動作しません。<br />
+　任意のＣＧＩ等を用意し、カスタマイズしてお使いください。</span></p>
+      </div>
+      <a name="works01" id="works01"></a>
+      <h3>業務内容その１<span>H3サンプル大見出し</span></h3>
       <div class="box_out">
         <div class="box_in">
-          <div class="img_right"><img src="img/sample_l.jpg" alt="サンプルイメージ" /></div>
-          <p>イメージ確認用のサンプル文言になります。任意のテキストに置き換えてお使いください。イメージ確認用のサンプル文言になります。任意のテキストに置き換えてお使いください。イメージ確認用のサンプル文言になります。任意のテキストに置き換えてお使いください。イメージ確認用のサンプル文言になります。任意のテキストに置き換えてお使いください。イメージ確認用のサンプル文言になります。任意のテキストに置き換えてお使いください。イメージ確認用のサンプル文言になります。任意のテキストに置き換えてお使いください。</p>
+          <div id="form">
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <td width="25%" class="td_head">氏 名<span class="chui">*</span><br />
+                  <span class="eng">Your name</span></td>
+                <td width="75%" class="td_odd"><input type="text" name="data1" /></td>
+              </tr>
+              <tr>
+                <td class="td_head">メールアドレス<span class="chui">*</span><br />
+                  <span class="eng">E-mail address</span></td>
+                <td class="td_odd"><input name="mail" type="text" size="50" /></td>
+              </tr>
+              <tr>
+                <td class="td_head">ご質問内容<span class="chui">*</span><br />
+                  <span class="eng">Content of question</span></td>
+                <td class="td_odd"><textarea rows="7" cols="50" name="data2"></textarea></td>
+              </tr>
+              <tr>
+                <td class="td_head">ホームページURL<br />
+                  <span class="eng">Your homepage</span></td>
+                <td class="td_odd"><input name="data3" type="text" value="http://" size="50" />
+                  <br />
+                  <span class="chui">※相互リンクご希望の方は必ずご記入ください。</span></td>
+              </tr>
+            </table>
+            <br />
+            <div align="center">
+              <input type="submit" name="submit2" value="内容を確認する" />
+            </div>
+          </form>
+        </div>
+        <p class="chui">※「*」マークは、必須項目です。</p>
         </div>
       </div>
-      <div class="box02_left">
-        <h3>グローバルメニューについて</h3>
-        <div class="box_in">
-          <div class="img_left"><img src="img/sample_s.jpg" alt="サンプルイメージ" /></div>
-          <p>当テンプレートのグローバルメニューについての解説です。<br />
-            当テンプレートのグローバルメニューはプルダウン式になっております。何段階にもできますので、必要に応じてカスタマイズしてください。</p>
-          <div class="btn_s"><a href="#">＞＞詳細はコチラ</a></div>
-        </div>
-        <h3>サイドメニューについて</h3>
-        <div class="box_in">
-          <div class="img_left"><img src="img/sample_s.jpg" alt="サンプルイメージ" /></div>
-          <p>当テンプレートのサイドメニューについての解説です。<br />
-            当テンプレートのサイドメニューは、アコーディオン式にメニューを追加可能になっております。こちらも必要に応じてカスタマイズしてください。</p>
-          <div class="btn_s"><a href="#">＞＞詳細はコチラ</a></div>
-        </div>
+      <div class="to_top"><a href="#" onclick="backToTop(); return false"><img src="img/to_top.gif" alt="ページトップへ戻る" /></a></div>
       </div>
-      <div class="box02_right">
-        <h3>新着情報一覧</h3>
-        <div class="dl_list">
-          <dl>
-            <dt>2010.08.01</dt>
-            <dd><a href="#">新規サンプルプロジェクトＤ、開始いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.07.30</dt>
-            <dd><a href="#">○○ページを、更新いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.07.15</dt>
-            <dd><a href="#">新規サンプルプロジェクトＣ、開始いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.07.01</dt>
-            <dd><a href="#">○○ページを、更新いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.06.30</dt>
-            <dd><a href="#">新規サンプルプロジェクトＢ、開始いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.06.15</dt>
-            <dd><a href="#">○○ページを、更新いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.06.01</dt>
-            <dd><a href="#">新規サンプルプロジェクトＡ、開始いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.05.16</dt>
-            <dd><a href="#">○○ページを、更新いたしました。</a></dd>
-          </dl>
-          <dl>
-            <dt>2010.05.01</dt>
-            <dd><a href="#">当ホームページがリニューアルオープンいたしました。</a></dd>
-          </dl>
-          <div class="btn_s"><a href="#">＞＞新着情報一覧はコチラ</a></div>
-        </div>
-      </div>
-    </div>
     <!--/content end-->
     <!--side start-->
     <div id="side">
