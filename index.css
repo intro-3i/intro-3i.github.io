@@ -31,6 +31,7 @@ msr_btn12{
  
 h1 {
     font-family: 'Noto Serif JP', sans-serif;
+    background-color: #d1d1d1;
 }
 h2 {
     font-family: 'Noto Serif JP', sans-serif;
@@ -40,4 +41,7 @@ h3 {
 }
 a {
     font-family: 'Noto Serif JP', sans-serif;
+}
+body {
+  background-color: skyblue;
 }
