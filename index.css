@@ -1,5 +1,12 @@
 header {
-    background-color: #d1d1d1;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: #eee;
+  box-sizing: border-box;
 }
 h1 {
     font-family: 'Noto Serif JP', sans-serif;
