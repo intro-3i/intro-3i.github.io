@@ -1,6 +1,8 @@
+header {
+    background-color: #d1d1d1;
+}
 h1 {
     font-family: 'Noto Serif JP', sans-serif;
-    background-color: #d1d1d1;
     color:#3a45ab
 }
 h2 {
