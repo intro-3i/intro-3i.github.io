@@ -62,7 +62,7 @@ function test(wcheck) {
 d3.csv("https://docs.google.com/spreadsheets/d/1M9gH9ow5QyfnIAalvIMtCmk4urmAH9QhCdSvH0ZLQXE/export?format=csv&range=A3:D", function(error, data){
 	var text = "";
 	for(var i=0; i<data.length; i++){
-		text += i+1 + " 名前: <a href=\"mailto:" + data[i].Username + "</a> " + data[i].Timestamp + "<pre>" + data[i].Comments + "</pre>";
+		text += i+1 + " 名前: <a href=\"mailto:" + data[i].Name + "</a> " + data[i].Timestamp + "<pre>" + data[i].Comments + "</pre>";
 	}
 	d3.select("#comments").html(text);
 });
