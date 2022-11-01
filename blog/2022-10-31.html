@@ -28,9 +28,10 @@ intro3Iのメンバーはまだオーナーの3人のみです。そこでメン
 にコメントまたは、下にあるコメント欄でで教えてください。
 </h3>
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSd3rASPK4RXOoDC2NBgjepJw1ULusqpR8KMAEZh8oyv95iRzg/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
-<p><input name="entry.1712486412" placeholder="ユーザー名" value="ゲスト" required></p>
-<p><textarea name="entry.136491237" placeholder="コメント" rows="10" cols="40" maxlength="400" id="wcheck" required></textarea></p>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfrXUjD7VVegCc8e1byzYdLxvtDet0ZmQIdRLa/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
+<p><input name="entry.41976116" placeholder="ユーザー名" value="ゲスト" required></p>
+<p><input name="entry.1020732349" placeholder="メールアドレス" type="email"></p>
+<p><textarea name="entry.1989765380" placeholder="コメント" rows="10" cols="40" maxlength="400" id="wcheck" required></textarea></p>
 <input type="submit" id="submitbutton" value="送信">
 </form>
 <iframe onload='if(submitted){window.location="";}' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
@@ -55,16 +56,3 @@ function test(wcheck) {
 	return submitted=!0;
 }
 </script>
-<h3>
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<div id="comments"></div>
-<script>
-d3.csv("https://docs.google.com/spreadsheets/d/1M9gH9ow5QyfnIAalvIMtCmk4urmAH9QhCdSvH0ZLQXE/export?format=csv&range=A3:D", function(error, data){
-	var text = "";
-	for(var i=0; i<data.length; i++){
-		text += i+1 + " 名前: <a href=\"mailto:" + data[i].Name + "</a> " + data[i].Timestamp + "<pre>" + data[i].Comments + "</pre>";
-	}
-	d3.select("#comments").html(text);
-});
-</script>
-</h3>
