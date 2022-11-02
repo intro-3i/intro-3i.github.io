@@ -29,10 +29,10 @@ intro3Iのメンバーはまだオーナーの3人のみです。そこでメン
 </h3>
 
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfrXUjD7VVegCc8e1byzYdLxvtDet0ZmQIdRLa-lmWIkOmSoQ/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
-<p><input name="entry.216107078" placeholder="ユーザー名" value="ゲスト" required></p>
+<p><input name="entry.216107078" placeholder="名前" value="名無し" required></p>
 <p><input name="entry.616806241" placeholder="メールアドレス" type="email"></p>
-<p><textarea name="entry.140248788" placeholder="コメント" rows="10" cols="40" maxlength="400" id="wcheck" required></textarea></p>
-<input type="submit" id="submitbutton" value="送信"
+<p><textarea name="entry.14024878" placeholder="コメント" rows="10" cols="40" maxlength="400" id="wcheck" required></textarea></p>
+<input type="submit" id="submitbutton" value="送信">
 </form>
 <iframe onload='if(submitted){window.location="";}' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
 
@@ -56,6 +56,7 @@ function test(wcheck) {
 	return submitted=!0;
 }
 </script>
+
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <div id="comments"></div>
 <script>
