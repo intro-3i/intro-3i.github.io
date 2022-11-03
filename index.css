@@ -135,7 +135,6 @@ a.btn-green:hover {
     position: relative;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin: 0 auto;
     max-width: 280px;
     padding: 10px 25px;
