@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<p>
+<label>URL:<input type="text" id="nameText"></label>
+<input type="button" value="Check" id="checkButton">
+</p>
+<script>
+function butotnClick(){
+  msg.innerText = 'nameText.value + 'ですね';
+}
+
+let nameText = document.getElementById('nameText');
+nameText.value = '名前';
+let msg = document.getElementById('msg');
+
+let checkButton = document.getElementById('checkButton');
+checkButton.addEventListener('click', butotnClick);
+</script>
+<video src="nameText.value"></video>
